@@ -1,0 +1,63 @@
+/* main colour scheme */
+:root {
+  --black: black;
+  --white: #ffffff;
+  --light-grey: #c8d3d5;
+  --creamy-grey: #e2dadb;
+  --super-light-grey: #fcfafa;
+  --grey: #6e8387;
+  --light-blue: #b2d4e6;
+  --blue: #00a8e8;
+  --dark: #00a8e8;
+}
+
+/* basic styling applied on whole body section  */
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "M PLUS 1p", sans-serif;
+}
+
+/* header section styling */
+.header {
+  margin: 0px;
+  padding: 40px;
+  opacity: 0.3;
+  background-color: var(--light-grey);
+}
+
+.team-title {
+  text-align: center;
+  color: var(--black);
+  font-weight: 900;
+}
+
+/* main section styling */
+
+/* card styling  */
+
+.card {
+  margin-top: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 20%;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.name-title {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.fa-color {
+  color: var(--light-blue);
+  background-color: var(--super-light-grey);
+  padding: 40px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
