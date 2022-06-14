@@ -1,4 +1,4 @@
-/* main colour scheme */
+/* main color scheme */
 :root {
   --black: black;
   --white: #ffffff;
@@ -20,4 +20,24 @@
 
 body {
   font-family: "M PLUS 1p", sans-serif;
+}
+
+/* card styling */
+
+.card {
+  width: 18rem;
+}
+
+.manager-card-container,
+.engineer-card-container,
+.intern-card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: var(--super-light-grey);
+}
+
+.fa-color {
+  color: var(--blue);
+  margin: 30px 10px 0px 0px;
 }
