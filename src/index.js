@@ -29,104 +29,154 @@ const startQuestions = [
 // manager questions array
 const managerQuestions = [
   {
-    message: "Please enter manager name",
+    message: "Please enter the name of the manager",
     type: "input",
     name: "name",
     validate: (enteredName) => {
       if (enteredName) {
         return true;
       } else {
-        return "Please enter manager name to continue";
+        return "Please enter the name to continue";
       }
     },
   },
   {
-    message: "Please enter manager ID",
+    message: "Please enter the ID number",
     type: "input",
     name: "id",
     validate: (enteredId) => {
       if (enteredId) {
         return true;
       } else {
-        return "Please enter manager name to continue";
+        return "Please enter the name to continue";
       }
     },
   },
   {
-    message: "Please enter manager email address ",
+    message: "Please enter the email address ",
     type: "input",
     name: "email",
     validate: (enteredEmail) => {
       if (enteredEmail) {
         return true;
       } else {
-        return "Please enter manager email address to continue";
+        return "Please enter the email address to continue";
       }
     },
   },
   {
-    message: "Please enter manager office number",
+    message: "Please enter the office number",
     type: "input",
     name: "officeNumber",
     validate: (enteredOfficeNumber) => {
       if (enteredOfficeNumber) {
         return true;
       } else {
-        return "Please enter manager office number to continue";
+        return "Please enter the office number to continue";
       }
     },
   },
 ];
 
-// manager questions array
-
-// manager questions array
+// engineer questions array
 const engineerQuestions = [
   {
-    message: "Please enter engineer name",
+    message: "Please enter the name of the engineer",
     type: "input",
     name: "name",
     validate: (enteredName) => {
       if (enteredName) {
         return true;
       } else {
-        return "Please enter name to continue";
+        return "Please enter the name to continue";
       }
     },
   },
   {
-    message: "Please enter ID number",
+    message: "Please enter the ID number",
     type: "input",
     name: "id",
     validate: (enteredId) => {
       if (enteredId) {
         return true;
       } else {
-        return "Please enter ID number to continue";
+        return "Please enter the ID number to continue";
       }
     },
   },
   {
-    message: "Please enter email address ",
+    message: "Please enter the email address ",
     type: "input",
     name: "email",
     validate: (enteredEmail) => {
       if (enteredEmail) {
         return true;
       } else {
-        return "Please enter email address to continue";
+        return "Please enter the email address to continue";
       }
     },
   },
   {
-    message: "Please enter github username",
+    message: "Please enter the github username",
     type: "input",
     name: "github",
     validate: (enteredGithub) => {
       if (enteredGithub) {
         return true;
       } else {
-        return "Please enter github username to continue";
+        return "Please enter the github username to continue";
+      }
+    },
+  },
+];
+
+// intern questions array
+const internQuestions = [
+  {
+    message: "Please enter the name of intern",
+    type: "input",
+    name: "name",
+    validate: (enteredName) => {
+      if (enteredName) {
+        return true;
+      } else {
+        return "Please enter the name to continue";
+      }
+    },
+  },
+  {
+    message: "Please enter the ID number",
+    type: "input",
+    name: "id",
+    validate: (enteredId) => {
+      if (enteredId) {
+        return true;
+      } else {
+        return "Please enter the ID number to continue";
+      }
+    },
+  },
+  {
+    message: "Please enter the email address ",
+    type: "input",
+    name: "email",
+    validate: (enteredEmail) => {
+      if (enteredEmail) {
+        return true;
+      } else {
+        return "Please enter the email address to continue";
+      }
+    },
+  },
+  {
+    message: "Please enter the school name",
+    type: "input",
+    name: "school",
+    validate: (enteredSchool) => {
+      if (enteredSchool) {
+        return true;
+      } else {
+        return "Please enter the school name to continue";
       }
     },
   },
