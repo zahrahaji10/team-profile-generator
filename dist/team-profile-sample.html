@@ -36,26 +36,28 @@
   <body>
     <main>
       <!-- div containing bander -->
-      <div class="bg-light p-5 rounded-lg text-center">
-        <h1 class="display-5 team-title fw-bold">Team Title</h1>
+      <div class="banner">
+        <h1 class="team-title">Team Title</h1>
       </div>
 
       <!-- manager card container -->
       <div class="manager-card-container m-5">
         <!-- cards -->
-        <div class="main-card-title"><h2>MANAGER</h2></div>
-        <div class="card mt-4 mb-4">
-          <h3 class="text-center card-title">
-            <i class="fa-solid fa-user fa-color fa-1x"></i>Manager
-          </h3>
+        <div class="manager-card-title"><h3>MANAGER</h3></div>
+        <div class="card mt-5 mb-5">
+          <h4 class="text-center card-title" id="manager-name">
+            <i class="fa-solid fa-user fa-color fa-1x"></i>Name
+          </h4>
           <div class="card-body">
-            <ul class="list-group list-group-flush border px-1">
-              <li class="list-group-item fw-bold">
-                Name: <span>name there</span>
-              </li>
+            <ul class="list-group list-group-flush border">
               <li class="list-group-item fw-bold">ID: <span> id here</span></li>
               <li class="list-group-item fw-bold">
-                Email: <span>email here</span>
+                Email:
+                <span
+                  ><a href="mailto: abc@example.com" class="email"
+                    >Email</a
+                  ></span
+                >
               </li>
               <li class="list-group-item fw-bold">
                 Office Number:
@@ -68,30 +70,95 @@
 
       <!-- engineer card container -->
       <div class="engineer-card-container m-5">
-        <!-- cards -->
-        <div class="card mt-4 mb-4">
-          <h3 class="text-center card-title">
-            <i class="fa-solid fa-user fa-color fa-1x"></i>Manager
-          </h3>
+        <div class="engineer-card-title"><h3>ENGINEER</h3></div>
+        <!-- card one -->
+        <div class="card mt-5 mb-5">
+          <h4 class="text-center card-title" id="engineer-name">
+            <i class="fa-solid fa-user-gear fa-color fa-1x"></i>Name
+          </h4>
           <div class="card-body">
-            <ul class="list-group list-group-flush border px-1">
-              <li class="list-group-item fw-bold">
-                Name: <span>name there</span>
-              </li>
+            <ul class="list-group list-group-flush border">
               <li class="list-group-item fw-bold">ID: <span> id here</span></li>
               <li class="list-group-item fw-bold">
-                Email: <span>email here</span>
+                Email:
+                <span
+                  ><a href="mailto: abc@example.com" class="email"
+                    >Email</a
+                  ></span
+                >
               </li>
               <li class="list-group-item fw-bold">
-                Office Number:
-                <span>1</span>
+                GitHib:
+                <span
+                  ><a
+                    href="https://github.com/zahrahaji10"
+                    class="github"
+                    target="_blank"
+                    >username</a
+                  ></span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- card two -->
+        <div class="card mt-5 mb-5">
+          <h4 class="text-center card-title">
+            <i class="fa-solid fa-user-gear fa-color fa-1x"></i>Name
+          </h4>
+          <div class="card-body">
+            <ul class="list-group list-group-flush border">
+              <li class="list-group-item fw-bold">ID: <span> id here</span></li>
+              <li class="list-group-item fw-bold">
+                Email:
+                <span
+                  ><a href="mailto: abc@example.com" class="email"
+                    >Email</a
+                  ></span
+                >
+              </li>
+              <li class="list-group-item fw-bold">
+                GitHib:
+                <span
+                  ><a
+                    href="https://github.com/zahrahaji10"
+                    class="github"
+                    target="_blank"
+                    >username</a
+                  ></span
+                >
               </li>
             </ul>
           </div>
         </div>
       </div>
 
-      <!--  -->
+      <!-- intern card container -->
+      <div class="intern-card-container m-5">
+        <div class="intern-card-title"><h3>INTERN</h3></div>
+        <div class="card mt-5 mb-5">
+          <h4 class="text-center card-title" id="intern-name">
+            <i class="fa-solid fa-user-graduate fa-color fa-1x"></i>Name
+          </h4>
+          <div class="card-body">
+            <ul class="list-group list-group-flush border">
+              <li class="list-group-item fw-bold">ID: <span> id here</span></li>
+              <li class="list-group-item fw-bold">
+                Email:
+                <span
+                  ><a href="mailto: abc@example.com" class="email"
+                    >Email</a
+                  ></span
+                >
+              </li>
+              <li class="list-group-item fw-bold">
+                School: <span>name here</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </main>
   </body>
 </html>
