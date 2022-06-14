@@ -1,14 +1,15 @@
 /* main color scheme */
 :root {
-  --black: black;
   --white: #ffffff;
-  --light-grey: #c8d3d5;
-  --creamy-grey: #e2dadb;
-  --super-light-grey: #fcfafa;
+  --off-white: #fcfafa;
   --grey: #6e8387;
-  --light-blue: #b2d4e6;
+  --light-grey: #c8d3d5;
+  --creamy-grey: #b5b5ae;
+  --mid-grey: #898b87;
   --blue: #00a8e8;
-  --dark: #00a8e8;
+  --light-blue: #b2d4e6;
+  --super-light-blue: #ecf7fc;
+  --black: black;
 }
 
 /* basic styling applied on whole body section  */
@@ -34,7 +35,24 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  background-color: var(--super-light-grey);
+  position: relative;
+  border-radius: 2%;
+  box-shadow: 0 4px 8px 0 var(--light-grey);
+}
+
+.manager-card-container {
+  background-color: var(--super-light-blue);
+  opacity: 1;
+}
+
+.main-card-title {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.6;
+  padding: 5px;
+  margin: 10px;
+  color: var(--light-blue);
 }
 
 .fa-color {
