@@ -1,4 +1,5 @@
 const Engineer = require("./Engineer");
+const Manager = require("./Manager");
 
 describe("getFunction", () => {
   // test code for getOffice Number function
@@ -12,7 +13,7 @@ describe("getFunction", () => {
 
   it("should return role for a new manager instance", () => {
     const manager = new Manager();
-    const newManagerRole = intern.getRole(manager.role);
+    const newManagerRole = manager.getRole(manager.role);
     expect(newManagerRole).toEqual(manager.role);
   });
 });

@@ -12,7 +12,7 @@ describe("getFunction", () => {
 
   it("should return role for a new engineer instance", () => {
     const engineer = new Engineer();
-    const newEngineerRole = intern.getRole(engineer.role);
+    const newEngineerRole = engineer.getRole(engineer.role);
     expect(newEngineerRole).toEqual(engineer.role);
   });
 });
