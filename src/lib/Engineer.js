@@ -1,5 +1,4 @@
 // import Employee.js into file
-const { getVersion } = require("jest");
 const Employee = require("./Employee");
 
 // engineer class extending from main parent class
