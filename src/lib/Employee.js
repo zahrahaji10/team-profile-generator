@@ -4,6 +4,7 @@ class Employee {
     this.name = name;
     this.id = id;
     this.email = email;
+    this.role = "Employee";
   }
 
   //fn to get the name for each instance
@@ -20,7 +21,7 @@ class Employee {
   }
 
   getRole() {
-    return "Employee";
+    return this.role;
   }
 }
 
