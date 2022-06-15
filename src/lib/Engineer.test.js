@@ -1,17 +1,10 @@
-// import Employee.js into file
-const Employee = require("./Employee");
+const Engineer = require("./Engineer");
 
-// engineer class extending from main parent class
-class Engineer extends Employee {
-  constructor(name, id, email, github) {
-    super(name, id, email);
-    this.github = github;
-    this.role = "Engineer";
-  }
-
-  getGithub() {
-    return this.github;
-  }
-}
-
-module.exports = Engineer;
+describe("getFunction", () => {
+  // test code for getGithub function
+  it("should return github username for new instance", () => {
+    const engineer = new Engineer();
+    const newEngineerGithub = engineer.getGithub(engineer.github);
+    expect(newEngineerGithub).toEqual(engineer.github);
+  });
+});
