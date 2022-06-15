@@ -1,3 +1,4 @@
+// declared the employee class as an object
 class Employee {
   constructor(name, id, email) {
     this.name = name;
@@ -5,6 +6,7 @@ class Employee {
     this.email = email;
   }
 
+  //fn to get the name for each instance
   getName() {
     return this.name;
   }
@@ -15,6 +17,10 @@ class Employee {
 
   getEmail() {
     return this.email;
+  }
+
+  getRole() {
+    return "Employee";
   }
 }
 
