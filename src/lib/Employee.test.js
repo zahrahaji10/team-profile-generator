@@ -1,6 +1,5 @@
 // import module employee.js into file
 const Employee = require("../../src/lib/Employee");
-const getName = require("../../src/lib/Employee");
 
 describe("getFunctions", () => {
   // test condition for getName function
