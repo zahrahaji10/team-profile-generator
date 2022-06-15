@@ -3,6 +3,7 @@ const Employee = require("../../src/lib/Employee");
 
 describe("getFunctions", () => {
   // test condition for getName function
+
   it("should return name of each new employee instance", () => {
     // expect output from fn
     const employee = new Employee();
@@ -12,7 +13,8 @@ describe("getFunctions", () => {
     expect(newEmployeeName).toEqual(employee.name);
   });
 
-  // test condition for getName function
+  // testing for getId function
+
   it("should return id of each new employee instance", () => {
     // expect output from fn
     const employee = new Employee();

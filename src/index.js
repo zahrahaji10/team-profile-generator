@@ -4,9 +4,9 @@ const inquirer = require("inquirer");
 // declare questions objects array using inquirer
 
 // first question user will be asked
-const startQuestions = [
+const mainQuestions = [
   {
-    message: "Please enter team name",
+    message: "Please enter the team name",
     type: "input",
     name: "teamName",
     // validate that user entered a team name
@@ -19,64 +19,66 @@ const startQuestions = [
     },
   },
   {
-    message: "Select the type of employee to add to the team",
+    message: "Please select the type of employee to add to the team",
     type: "list",
-    name: "typeOfEmployee",
-    choice: ["Manager", "Engineer", "Intern"],
+    name: "role",
+    choices: ["Manager", "Engineer", "Intern"],
   },
 ];
 
 // manager questions array
-const managerQuestions = [
-  {
-    message: "Please enter the name of the manager",
-    type: "input",
-    name: "name",
-    validate: (enteredName) => {
-      if (enteredName) {
-        return true;
-      } else {
-        return "Please enter the name to continue";
-      }
+const promptManagerQuestions = () => {
+  return inquirer.prompt([
+    {
+      message: "Please enter the name of the manager",
+      type: "input",
+      name: "name",
+      validate: (enteredName) => {
+        if (enteredName) {
+          return true;
+        } else {
+          return "Please enter the name to continue";
+        }
+      },
     },
-  },
-  {
-    message: "Please enter the ID number",
-    type: "input",
-    name: "id",
-    validate: (enteredId) => {
-      if (enteredId) {
-        return true;
-      } else {
-        return "Please enter the name to continue";
-      }
+    {
+      message: "Please enter the ID number",
+      type: "input",
+      name: "id",
+      validate: (enteredId) => {
+        if (enteredId) {
+          return true;
+        } else {
+          return "Please enter the name to continue";
+        }
+      },
     },
-  },
-  {
-    message: "Please enter the email address ",
-    type: "input",
-    name: "email",
-    validate: (enteredEmail) => {
-      if (enteredEmail) {
-        return true;
-      } else {
-        return "Please enter the email address to continue";
-      }
+    {
+      message: "Please enter the email address ",
+      type: "input",
+      name: "email",
+      validate: (enteredEmail) => {
+        if (enteredEmail) {
+          return true;
+        } else {
+          return "Please enter the email address to continue";
+        }
+      },
     },
-  },
-  {
-    message: "Please enter the office number",
-    type: "input",
-    name: "officeNumber",
-    validate: (enteredOfficeNumber) => {
-      if (enteredOfficeNumber) {
-        return true;
-      } else {
-        return "Please enter the office number to continue";
-      }
+    {
+      message: "Please enter the office number",
+      type: "input",
+      name: "officeNumber",
+      validate: (enteredOfficeNumber) => {
+        if (enteredOfficeNumber) {
+          return true;
+        } else {
+          return "Please enter the office number to continue";
+        }
+      },
     },
-  },
-];
+  ]);
+};
 
 // engineer questions array
 const engineerQuestions = [
@@ -181,3 +183,13 @@ const internQuestions = [
     },
   },
 ];
+
+const promptQuestions = async () => {
+  const getAnswers = await inquirer.prompt(mainQuestions).then((answers) => {
+    if (answers.role === "manager") {
+      promptManagerQuestions();
+    }
+  });
+};
+
+promptQuestions();
