@@ -184,7 +184,7 @@ const internQuestions = [
   },
 ];
 
-const promptQuestions = async () => {
+const init = async () => {
   const getAnswers = await inquirer.prompt(mainQuestions).then((answers) => {
     if (answers.role === "manager") {
       promptManagerQuestions();
@@ -192,4 +192,4 @@ const promptQuestions = async () => {
   });
 };
 
-promptQuestions();
+init();
