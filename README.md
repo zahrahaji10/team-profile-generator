@@ -15,7 +15,8 @@ Using Node.js command-line application that utilises inquirer to takes informati
 
 ## Installation
 
-```git clone git@github.com:zahrahaji10/team-profile-generator.git
+```
+git clone git@github.com:zahrahaji10/team-profile-generator.git
 cd team-profile-generator
 npm install
 ```
