@@ -394,7 +394,6 @@ const init = async () => {
   // prompt team name question
   const { teamName } = await inquirer.prompt(teamNameQuestion);
 
-  console.log(teamName);
   // prompt manager questions
   const { name, id, email, officeNumber } = await inquirer.prompt(
     managerQuestions
@@ -416,7 +415,6 @@ const init = async () => {
 
       // create engineer instance
       const engineer = new Engineer(name, id, email, github);
-      console.log(engineer);
 
       // push to array
       engineers.push(engineer);
@@ -435,8 +433,6 @@ const init = async () => {
       inProgress = false;
     }
   }
-
-  console.log(manager.name, manager.id);
 
   // generate html
   const html = generateHTML(teamName, manager, engineers, interns);
