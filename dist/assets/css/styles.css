@@ -65,14 +65,6 @@ body {
   justify-content: space-evenly;
 }
 
-@media screen and (max-width: 699px) and (min-width: 520px) {
-  card-flex {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
 .manager-card-title,
 .engineer-card-title,
 .intern-card-title {
@@ -101,7 +93,7 @@ body {
   box-shadow: 0 1px 2px 0 var(--creamy-grey);
 }
 .list-group-item:hover {
-  background-color: var(--off-white);
+  background-color: var(--grey-1);
 }
 
 /* manager card styling */
@@ -145,4 +137,13 @@ body {
 
 .intern-card-title {
   color: var(--mid-orange);
+}
+
+/* media query */
+@media screen and (max-width: 699px) and (min-width: 520px) {
+  card-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
