@@ -7,19 +7,22 @@ class Employee {
     this.role = "Employee";
   }
 
-  //fn to get the name for each instance
+  //fn to get the name for each instancies
   getName() {
     return this.name;
   }
 
+  //fn to get the id for each instancies
   getId() {
     return this.id;
   }
 
+  //fn to get the email for each instancies
   getEmail() {
     return this.email;
   }
 
+  //fn to get the role for each instancies
   getRole() {
     return this.role;
   }

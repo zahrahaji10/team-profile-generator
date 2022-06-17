@@ -7,7 +7,14 @@ class Manager extends Employee {
     this.role = "Manager";
   }
 
-  //   fn to get office number
+  //fn to get the role for each engineer instancies
+
+  getRole() {
+    return this.role;
+  }
+
+  //fn to get the role for each engineer instancies
+
   getOfficeNumber() {
     return this.officeNumber;
   }

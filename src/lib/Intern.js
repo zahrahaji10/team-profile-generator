@@ -9,6 +9,14 @@ class Intern extends Employee {
     this.role = "intern";
   }
 
+  //fn to get the role for each intern instancies
+
+  getRole() {
+    return this.role;
+  }
+
+  //fn to get the school for each intern instancies
+
   getSchool() {
     return this.school;
   }

@@ -1,12 +1,10 @@
-// import inquirer into this application
+// imports into this application
 const fs = require("fs");
 const path = require("path");
 const inquirer = require("inquirer");
 const Manager = require("./lib/Manager");
 const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
-
-// declare questions objects array using inquirer
 
 // user asked to select team name
 const teamNameQuestion = {
@@ -24,7 +22,6 @@ const teamNameQuestion = {
 };
 
 // choice questions
-
 const choiceQuestion = {
   message: "What would you like to do next?",
   type: "list",
@@ -201,11 +198,14 @@ const internQuestions = [
   },
 ];
 
+// fn to generate HTML of all team members
 const generateHTML = (teamName, managerInfo, engineerInfo, internInfo) => {
+  // use user input to generate title
   const generateTitle = ` <div class="banner">
     <h1 class="team-title">${teamName}</h1>
   </div>`;
 
+  // fn to use  generate manager card for each instancies
   const generateManagerCard = `<div class="card mt-5 mb-5">
         <h4 class="text-center card-title" id="manager-name">
           <i class="fa-solid fa-user fa-color fa-1x"></i> ${managerInfo.name}
@@ -231,6 +231,7 @@ const generateHTML = (teamName, managerInfo, engineerInfo, internInfo) => {
         </div>
       </div>`;
 
+  // fn to use  generate engineer card for each instancies
   const generateEngineerCard = (engineer) => {
     return ` <div class="card mt-5 mb-5">
           <h4 class="text-center card-title" id="engineer-name">
@@ -265,6 +266,7 @@ const generateHTML = (teamName, managerInfo, engineerInfo, internInfo) => {
         </div>`;
   };
 
+  // fn to use  generate intern card for each instancies
   const generateInternCard = (intern) => {
     return `<div class="card mt-5 mb-5">
           <h4 class="text-center card-title" id="intern-name">
@@ -291,9 +293,13 @@ const generateHTML = (teamName, managerInfo, engineerInfo, internInfo) => {
         </div>`;
   };
 
+  // map through the interns array and create a card for each intern
   const internCards = internInfo.map(generateInternCard).join("");
+
+  // map through the interns array and create a card for each intern
   const engineerCards = engineerInfo.map(generateEngineerCard).join("");
 
+  // template html return when higher order fn is called
   return `<!DOCTYPE html>
       <html lang="en">
         <head>c
@@ -376,6 +382,7 @@ const generateHTML = (teamName, managerInfo, engineerInfo, internInfo) => {
   `;
 };
 
+// fn to prompt/loop questions and stores responses
 const init = async () => {
   // declare empty array for engineers
   const engineers = [];
@@ -438,4 +445,5 @@ const init = async () => {
   fs.writeFileSync(path.join(__dirname, "../dist/index.html"), html);
 };
 
+// first fn to be called
 init();
