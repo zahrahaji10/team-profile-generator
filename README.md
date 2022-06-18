@@ -6,7 +6,7 @@
 - [Installation](#installation)
 - [Launch Server](#Launch-server)
 - [Node Packages](#node-packages)
-- [User Journey](#user-journey)
+- [Application Diagram](#application-diagram)
 - [Contact Me](#contact-me)
 
 ## Description
@@ -33,14 +33,14 @@ num run test
 - [Inquirer](https://www.npmjs.com/package/inquirer)
 - [Jest](https://www.npmjs.com/package/jest)
 
-## User Journey
+## Application Diagram
+
+<img width="662" alt="diagram" src="https://user-images.githubusercontent.com/102627226/174457867-67d5cf59-e7e4-49ce-b4b9-d8f2bb25ea85.png">
 
 ### Video Demonstration
 
-[Video](https://user-images.githubusercontent.com/102627226/172487988-cffc517e-b91e-4b82-84a6-d5224af018f0.mp4)
-
 ### Contact Me
 
-- Personal E-mail : ludlow_10@hotmail.com
+- Personal E-mail : zahrahhaji10@gmail.com
 
 - GitHub profile [Click Here](https://github.com/zahrahaji10)
