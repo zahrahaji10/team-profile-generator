@@ -39,9 +39,15 @@ num run test
 
 ### Video Demonstration
 
+[Video Walk Through](https://drive.google.com/file/d/1kA1n1t65tFLt92wbS-T1aUHy9uXS70O_/view?usp=sharing)
+
 #### Team Profile
 
-[Generate HTML Demo](https://drive.google.com/file/d/1AYL5QWoTZ7VrSALgFObfFe-wSZ5YIs_l/view?usp=sharing)
+[Generate HTML Demonstration](https://drive.google.com/file/d/1AYL5QWoTZ7VrSALgFObfFe-wSZ5YIs_l/view?usp=sharing)
+
+#### Screenshot
+
+<img width="662" alt="page" src="https://user-images.githubusercontent.com/102627226/174460247-3aa044f7-734c-4d17-a23d-b6ff33d7ad12.png">
 
 ### Question
 
