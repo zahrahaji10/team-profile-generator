@@ -25,7 +25,7 @@ npm install
 
 ```
 nmp run start
-num run test
+nmp run test
 ```
 
 ## Node Packages
