@@ -1,0 +1,149 @@
+/* main color scheme */
+:root {
+  --white: #ffffff;
+  --off-white: #fcfafa;
+  --grey: #6e8387;
+  --light-grey: #f4f2e9;
+  --creamy-grey: #b5b5ae;
+  --mid-grey: #898b87;
+  --blue: #00a9e2;
+  --light-blue: #90e0ef;
+  --super-light-blue: #edf2fb;
+  --orange: #fb8500;
+  --light-orange: #fccf9c;
+  --mid-orange: #fba43f;
+  --green: #2bbb99;
+  --light-green: #cdf3e2;
+  --mid-green: #49d59f;
+  --grey-1: #f1f3f5;
+  --black: rgba(0, 0, 0, 0.2);
+  --black-2: black;
+}
+
+/* basic styling applied on whole body section  */
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "M PLUS 1p", sans-serif;
+}
+
+/* banner styling */
+
+.banner {
+  padding: 30px;
+}
+
+.team-title {
+  text-align: center;
+  font-weight: bolder;
+  color: var(--mid-grey);
+}
+
+/* card styling */
+
+.card {
+  width: 15rem;
+}
+
+.manager-card-container,
+.engineer-card-container,
+.intern-card-container {
+  position: relative;
+  border-radius: 1.2%;
+  box-shadow: 0 4px 8px 0 var(--black);
+  background-color: var(--off-white);
+}
+
+.card-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.manager-card-title,
+.engineer-card-title,
+.intern-card-title {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.6;
+  padding: 5px;
+  margin: 10px;
+  text-decoration: overline;
+}
+
+.fa-user,
+.fa-user-gear,
+.fa-user-graduate {
+  margin: 30px 10px 0px 0px;
+}
+
+.email,
+.github {
+  text-decoration: none;
+  color: var(--black-2);
+}
+
+.list-group-item {
+  box-shadow: 0 1px 2px 0 var(--creamy-grey);
+}
+.list-group-item:hover {
+  background-color: var(--grey-1);
+}
+
+/* manager card styling */
+
+.manager-card-container {
+  background-color: var(--super-light-blue);
+}
+
+.fa-user {
+  color: var(--blue);
+  margin: 30px 10px 0px 0px;
+}
+
+.manager-card-title {
+  color: var(--light-blue);
+}
+
+/* engineer card styling */
+
+.fa-user-gear {
+  color: var(--green);
+}
+
+.engineer-card-container {
+  background-color: var(--light-green);
+}
+
+.engineer-card-title {
+  color: var(--mid-green);
+}
+
+/* intern card styling */
+
+.intern-card-container {
+  background-color: var(--light-orange);
+}
+
+.fa-user-graduate {
+  color: var(--orange);
+}
+
+.intern-card-title {
+  color: var(--mid-orange);
+}
+
+/* media query */
+@media screen and (max-width: 699px) and (min-width: 520px) {
+  card-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
